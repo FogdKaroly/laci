@@ -13,3 +13,25 @@ html {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
+
+.main-nav {
+    background-color: aqua;
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-item {
+    text-decoration: none;
+}
+
+.main-title {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 100;
+}
