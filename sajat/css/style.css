@@ -14,16 +14,44 @@ html {
     overflow-x: hidden;
 }
 
+.clearfix {overflow: auto;}
+
+/*****************************************/
+/* HEADER */
+/*****************************************/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header_img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
 .main-nav {
-    background-color: aqua;
     display: flex;
-    flex: 0 0 100%;
-    align-items: center;
+    padding-top: 40px;
     justify-content: flex-end;
 }
 
 .menu-item {
+    margin-right: 30px;
+}
+
+.menu-item a:link,
+.menu-item a:visited{
+    padding: 10px 0px;
+    color: #fff;
     text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.menu-item a:hover,
+.menu-item a:active {
+    border-bottom: 2px solid #fc6;
 }
 
 .main-title {
@@ -34,4 +62,5 @@ html {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-weight: 100;
+    color: #fff;
 }
